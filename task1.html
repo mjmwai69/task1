@@ -1,0 +1,24 @@
+//task 1
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function removeSpaces(string) {
+ return string.split(' ').join('');
+}
+</script>
+<body>
+
+<h1>The input size attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">Full name:</label>
+  <input type="text" onblur="this.value=removeSpaces(this.value);" id="fname" name="fname" size="50"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" onblur="this.value=removeSpaces(this.value);" id="email" name="email" minlength="25" size="25"><br><br>
+  <input type="submit" value="click">
+</form>
+
+</body>
+</html>
+
